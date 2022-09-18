@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+      /><br /><br />
+      <label for="age" placeholder="Enter your age">Age</label>
+      <input type="number" id="age" max="10" /><br /><br />
+      <label for="email">Email</label>
+      <input type="email" id="email" /><br /><br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        minlength="4"
+        maxlength="8"
+      /><br /><br />
+      <label>Date</label>
+      <input type="datetime-local" /><br /><br />
+      <label>Phone NO.</label>
+
+      <input type="tel" pattern="[0-9]{10}" /><br /><br />
+      <label>Gender</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" value="transgender" />Others
+      <br />
+      <label>Your favourite vehicle</label>
+      <input type="checkbox" name="v1" value="bike" />
+      <label>I have a bike</label>
+      <input type="checkbox" name="v2" value="car" />
+      <label>I have a car</label>
+      <input type="checkbox" name="v3" value="boat" />
+      <label>I have a boat</label>
+      <br /><br />
+      <textarea
+        rows="10"
+        cols="20"
+        placeholder="Enter your comments"
+      ></textarea>
+      <br /><br />
+      <label>Country</label>
+      <select name="country">
+        <option disabled selected>Select a country</option>
+        <option value="india" name="country">India</option>
+        <option value="china" name="country">China</option>
+        <option>pakistan</option>
+        <option>Bangladesh</option>
+      </select>
+
+      <input list="country" />
+      <datalist id="country">
+        <option disabled selected>Select a country</option>
+        <option value="india" name="country"></option>
+        <option value="china" name="country"></option>
+        <option value="pakistan"></option>
+        <option value="Bangladesh"></option>
+      </datalist>
+
+      <input type="range" min="0" max="10" /> <br />
+      <label>HTML</label>
+      <progress value="100" max="100">100%</progress>
+      <label>CSS</label>
+      <progress value="50" max="100">50%</progress>
+      <!-- <input type="submit" value="Submit" /> -->
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

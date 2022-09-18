@@ -1,0 +1,19 @@
+form
+attributes -- >  type,id, name, value, placeholder
+
+Input types
+text  
+password 
+radio 
+checkbox 
+email
+number
+tel -->
+
+
+HTML5 - 2012
+
+audio video 
+
+semantic tag --> header, nav, section, footer, article  --> meaningful tag
+SEO 
